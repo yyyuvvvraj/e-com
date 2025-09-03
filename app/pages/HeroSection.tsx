@@ -14,7 +14,7 @@ const HeroSection = () =>{
             <div className='relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 items-center'>
                 {/* text */}
                 <motion.div
-                intial={{opacity:0,x:-40}}
+                initial={{opacity:0,x:-40}}
                 animate={{opacity:1,x:0}}
                 transition={{duration:1}}
                 className="space-y-6"
@@ -37,7 +37,7 @@ const HeroSection = () =>{
                     </div> 
                 </motion.div>
                 <motion.div
-                intial={{opacity:0,x:-40}}
+                initial={{opacity:0,x:-40}}
                 animate={{opacity:1,x:0}}
                 transition={{duration:1}}
                 className="relative w-full h-96 md:h-[500px]">

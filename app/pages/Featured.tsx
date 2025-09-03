@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Featured =() =>{
     return(
@@ -6,7 +7,7 @@ const Featured =() =>{
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold mb-2">Shop By category</h2>
-                    <p className="text-gray-600 max-w-2xl mx-auto">Explore our wide range of products across different categories to find exactly what you're looking for.</p>
+                    <p className="text-gray-600 max-w-2xl mx-auto">Explore our wide range of products across different categories to find exactly what you&apos;re looking for.</p>
 
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -40,7 +41,8 @@ const Featured =() =>{
                             </div>
                             <div className="absolute inset-0 bg-indigo-600/0 group:hover:bg-indigo-600/20 transition-all duration-300 z-10">
                             </div>
-                            <img src={category.image} alt={category.title}/>
+                            <Image src={category.image} alt={category.title}></Image>
+                            
                         </div>
                     ))
                     }
